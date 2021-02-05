@@ -24,7 +24,8 @@ const Cars = () => {
                 return (
                     <div>
                         <button
-                            onClick={()=> insertCar({
+                            onClick={()=> 
+                                insertCar({
                                 variables: {
                                     brand: 'Honda',
                                     color: 'Red',

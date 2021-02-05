@@ -11,9 +11,10 @@ class Cars extends Component {
 
     async loadData(client) {
         const cars = await client.query({
+            // need to query id or else get error
             query: gql`
             { 
-                carsById(id: "1") {
+                carsById(id: "1") { 
                     color
                     brand
                     parts {
